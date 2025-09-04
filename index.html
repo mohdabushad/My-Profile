@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>my_pofile </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #F7F7F7;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, "Helvetica Neue", Arial, sans-serif;
+
+        }
+
+        header {
+            width: 100%;
+            margin: 0px auto;
+            height: 100px;
+            display: flex;
+
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1300px;
+
+            background-color: rgb(43, 42, 42);
+            padding: 15px;
+        }
+
+        .name h4 {
+            color: chocolate;
+            font-size: 18px;
+        }
+
+        .name span {
+            color: aquamarine;
+        }
+
+        .link {
+            display: flex;
+            gap: 20px;
+        }
+
+        .link a {
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .link a:hover {
+            color: rgb(253, 212, 27);
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        .icon {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon i {
+            color: antiquewhite;
+        }
+
+        .icon i:nth-child(1):hover {
+            color: blue;
+        }
+
+        .icon i:nth-child(2):hover {
+            color: rgb(234, 9, 255);
+        }
+
+        .icon i:nth-child(3):hover {
+            color: rgb(0, 0, 255);
+        }
+
+        .icon i:nth-child(5):hover {
+            color: rgb(53, 185, 64);
+        }
+
+        .icon i:nth-child(4):hover {
+            color: rgb(0, 0, 0);
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+        }
+
+        .main1 {
+            width: 100%;
+            height: 200px;
+        }
+
+        .back_image {
+            width: 80%;
+            max-width: 1300px;
+            background: url("https://wallpapers.com/images/hd/coding-with-python-3d-b9oshkp9vqlwaap6.webp") no-repeat center /cover;
+            border-radius: 12px;
+
+            height: 100%;
+            margin: 0px auto;
+
+
+
+        }
+
+        .back_image h2 {
+            position: absolute;
+            left: 45%;
+            top: 45%;
+            font-size: 5vh;
+            color: rgb(240, 131, 6);
+        }
+
+        .main2 {
+            margin-top: 50px;
+            width: 100%;
+
+
+        }
+
+        .image {
+
+            display: flex;
+            width: 80vw;
+
+            margin: 0 auto;
+            max-width: 1300px;
+
+
+            padding: 20px;
+            justify-content: space-between;
+
+        }
+
+        .wi {
+
+            width: 60vh;
+
+
+        }
+
+        .image img {
+            width: 34vw;
+            max-width: 600px;
+
+            height: 32vw;
+            border-radius: 50%;
+
+        }
+
+        .wr {
+            margin-top: 10%;
+            margin-left: 5%;
+
+            width: 500px;
+
+        }
+
+        .wr h1 {
+            font-size: 45px;
+
+
+
+        }
+
+        .wr p {
+            padding-top: 20px;
+            font-size: 22px;
+        }
+
+        .but {
+            padding-top: 2vw;
+
+            display: flex;
+            gap: 3vw;
+        }
+
+        .but button {
+            background-color: rgb(245, 180, 193);
+            width: 110px;
+            height: 2.6vw;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .main3 {
+            padding: 120px 0;
+            width: 100%;
+            height: auto;
+            margin: 80px 0;
+            background: linear-gradient(135deg, #ff6a008e, #ee097894, #00c8ff8e, #0073ffab);
+
+            border-bottom: 2px solid green;
+        }
+
+        .main3 .cont {
+            display: flex;
+
+            gap: 50px;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1300px;
+            height: 340px;
+
+        }
+
+        .main3 .cont2 {
+
+            display: flex;
+
+            gap: 30px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 1300px;
+
+
+        }
+
+        .cont2 .lo {
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 20px;
+            width: 20vw;
+            height: 280px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .cont2 .lo i {
+            font-size: 42px;
+
+
+        }
+
+        .cont2 .lo p {
+            font-size: 1.2vw;
+            padding-bottom: 10px;
+
+
+        }
+
+        .cont2 .lo1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 40%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .cont .fir {
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 40px;
+            width: 50%;
+            height: 90%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .cont .fir h1 {
+            font-size: 3vw;
+            margin-bottom: 15px;
+        }
+
+        .cont .fir p {
+            width: 100%;
+            height: 100px;
+            font-size: 1.5vw;
+            line-height: 1.2;
+            word-spacing: 4px;
+        }
+
+        .cont .sec {
+            background-color: aliceblue;
+            border-radius: 20px;
+            padding: 40px;
+            width: 50%;
+            height: 90%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .progr {
+            width: 100%;
+            height: 10px;
+            background-color: blueviolet;
+            margin-bottom: 18px;
+        }
+
+        .cont .cut {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .cont .cut p {
+            font-size: 20px;
+        }
+
+        .main4 {
+            width: 100%;
+            height: auto;
+        }
+
+        .main4 .pro {
+            width: 80%;
+
+            max-width: 1300px;
+
+            margin: 0 auto;
+        }
+
+        .main4 .pro1 {
+
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 70px;
+
+        }
+
+        .main4 .pro1 h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .main4 .pro1 p {
+            font-size: 23px;
+        }
+
+        .main4 .pro1 button {
+            background-color: darkolivegreen;
+            color: rgb(201, 201, 201);
+            margin-top: 15px;
+            width: 200px;
+            height: 60px;
+            border-radius: 20px;
+            font-size: 21px;
+        }
+
+        .main4 .pro3 {
+            padding: 70px 30px 0 30px;
+            background-color: #FEECE7;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 70px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .main4 .pro4 {
+            padding-top: 70px;
+            width: 40%;
+        }
+
+        .main4 .pro4 p,
+        .pro8 p {
+            color: rgb(114, 17, 109);
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .main4 .pro4 p:nth-child(3),
+        .pro8 p:nth-child(3) {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .main4 .pro4 h2,
+        .pro8 h2 {
+            color: darkred;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .main4 .pro5 {
+            width: 60%;
+        }
+
+        .main4 .pro5 img {
+            width: 100%;
+        }
+
+
+
+        .main4 .pro5 img {
+            height: 400px;
+        }
+
+        .main5 {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .main5 .pro6 {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            max-width: 1300px;
+
+
+            margin: 0 auto;
+            gap: 40px;
+
+        }
+
+        .main5 .pro7 {
+            background-color: #FEECE7;
+            width: 49%;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .main5 .pro8 {
+            padding: 50px;
+            height: 320px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+
+        }
+
+        .main5 .pro9 {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .main5 .pro9 img {
+            width: 100%;
+            height: 405px;
+            border-radius: 20px;
+
+
+        }
+
+        .main6 {
+            width: 100%;
+            height: auto;
+            padding-top: 100px;
+        }
+
+        .main6 .msg {
+            display: flex;
+            gap: 100px;
+            max-width: 1300px;
+            width: 80%;
+            margin: 0 auto;
+            height: 570px;
+            background-color: rgb(240, 240, 223);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .main6 .msg1 {
+            width: 50%;
+            height: 500px;
+            margin-top: 50px;
+
+            padding: 60px;
+        }
+
+        .main6 .msg1 i {
+            font-size: 50px;
+            color: brown;
+
+
+        }
+
+        .main6 .msg1 h1 {
+            margin-top: 20px;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .main6 .msg1 p {
+            font-size: 22px;
+        }
+
+        .main6 .msg2 {
+            margin-top: 36px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 50px;
+            width: 36%;
+            height: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 20px;
+
+
+        }
+
+        .main6 .msg2 h1 {
+            font-size: 35px;
+
+        }
+
+        .main6 .msg2 input {
+            margin-top: 20px;
+            width: 22vw;
+            height: 40px;
+            padding: 10px 0 10px 10px;
+            font-size: 14px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid;
+
+        }
+
+        .main6 .msg2 textarea {
+            padding: 20px 0 0px 10px;
+            font-size: 15px;
+            width: 22vw;
+            height: 100px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid;
+            outline: none;
+        }
+
+        .main6 .msg2 button {
+            width: 180px;
+            margin: 0 80px;
+            height: 45px;
+            border-radius: 10px;
+            border: 1px solid;
+            color: #F7F7F7;
+            font-size: 16px;
+            background-color: cornflowerblue;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        footer .foot {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1300px;
+            height: 80px;
+            margin: 0 auto;
+            background-color: cornflowerblue;
+            padding: 30px;
+            border-radius: 20px;
+
+        }
+
+
+
+
+        @media (min-width: 1001px) and (max-width: 1300px) {
+            .wr h1 {
+                font-size: 3vw;
+            }
+
+            .wr p {
+                font-size: 2vw;
+            }
+
+            .wr button {
+                height: 35px;
+            }
+
+            .wr {
+                margin-top: 40px;
+            }
+
+            .wi img {
+                width: 36vw;
+                height: 35vw;
+            }
+
+            .cont .fir h1 {
+                font-size: 3.4vw;
+            }
+
+            .cont .fir {
+                padding: 30px;
+            }
+
+            .cont .fir p {
+                font-size: 19px;
+            }
+
+            .cont2 .lo {
+
+                width: 37.8vw;
+
+            }
+
+            .cont2 .lo1 {
+                padding: 0 4.5vw;
+            }
+
+            .cont2 .lo p {
+                font-size: 18px;
+            }
+
+            .cont2 {
+                margin: 0px;
+                flex-wrap: wrap;
+
+            }
+
+            .pro1 .pro2 h1 {
+                font-size: 32px;
+            }
+
+            .pro .pro3 {
+                padding: 20px;
+            }
+
+
+            .pro1 .pro2 p {
+                width: 90%;
+                font-size: 18px;
+            }
+
+            .pro .pro1 button {
+                width: 150px;
+                font-size: 15px;
+                height: 50px;
+            }
+
+            .pro3 .pro4 {
+                padding-top: 50px;
+            }
+
+            .pro6 .pro7 .pro8 {
+                padding: 30px;
+                margin-bottom: 10px;
+            }
+
+            .pro3 .pro4 h2,
+            .pro8 h2 {
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+
+            .pro3 .pro4 p,
+            .pro8 p {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            .pro3 .pro4 p:nth-child,
+            .pro8 p:nth-child(3) {
+                font-size: 17px;
+                margin-bottom: 12px;
+            }
+
+            .main6 .msg {
+                gap: 40px;
+            }
+
+            .msg .msg1 {
+                padding: 40px;
+            }
+
+            .msg .msg1 h1 {
+                font-size: 29px;
+            }
+
+            .msg .msg1 p {
+                font-size: 18px;
+            }
+
+            .msg .msg2 {
+                padding: 30px;
+                width: 33vw;
+            }
+
+            .msg .msg2 h1 {
+                font-size: 2.5vw;
+            }
+
+            .msg .msg2 input,
+            .msg .msg2 textarea {
+                width: 26vw;
+            }
+
+            .msg .msg2 button {
+                margin: 0 auto;
+
+            }
+
+
+        }
+
+        @media (min-width: 700px) and (max-width: 1000px) {
+            .main2 .image {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+
+            }
+
+            .main2 .image .wi {
+                padding-left: 2vw;
+                margin: 0 auto;
+                width: 80%;
+
+
+            }
+
+            .main2 .image .wr .but button {
+                height: 40px;
+            }
+
+            .main2 .image .wr {
+                height: auto;
+                margin: 0 auto;
+                width: 100%;
+                padding: 60px;
+            }
+
+            .main2 .image .wr h1 {
+                font-size: 37px;
+
+            }
+
+            .main2 .image .wr p {
+                font-size: 20px;
+            }
+
+            .main2 .image .wi img {
+
+                width: 100%;
+                height: 60vw;
+
+            }
+
+            .nav .link {
+                display: none;
+            }
+
+            .cont2 {
+                margin: 0px;
+                flex-wrap: wrap;
+
+            }
+
+            .cont2 .lo {
+
+                width: 37vw;
+
+            }
+
+            .cont2 .lo1 {
+                padding: 0 2.5vw;
+            }
+
+            .cont2 .lo p {
+                font-size: 18px;
+            }
+
+            .main3 .cont {
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .main3 .cont .fir {
+                width: 100%;
+
+                height: 270px;
+            }
+
+            .main3 .cont .fir h1 {
+                font-size: 40px;
+            }
+
+            .main3 .cont .fir p {
+                font-size: 20px;
+
+            }
+
+            .main3 .cont .sec {
+                width: 100%;
+                height: 270px;
+                padding: 20px;
+            }
+
+            .main6 .msg {
+                gap: 40px;
+            }
+
+            .msg .msg1 {
+                padding: 40px;
+            }
+
+            .msg .msg1 h1 {
+                font-size: 29px;
+            }
+
+            .msg .msg1 p {
+                font-size: 18px;
+            }
+
+            .msg .msg2 {
+                padding: 30px;
+                width: 33vw;
+            }
+
+            .msg .msg2 h1 {
+                font-size: 30px;
+            }
+
+            .msg .msg2 input,
+            .msg .msg2 textarea {
+                width: 26vw;
+            }
+
+
+            .pro1 .pro2 h1 {
+                font-size: 32px;
+            }
+
+            .pro .pro3 {
+                padding: 20px;
+            }
+
+
+            .pro1 .pro2 p {
+                width: 90%;
+                font-size: 18px;
+            }
+
+            .pro .pro1 button {
+                width: 150px;
+                font-size: 15px;
+                height: 50px;
+            }
+
+            .main4 .pro3 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+            }
+
+            .main4 .pro3 .pro4 {
+                width: 100%;
+                padding: 20px;
+                height: 290px;
+            }
+
+            .main4 .pro3 .pro5 {
+                width: 100%;
+            }
+
+            .main5 .pro6 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .main5 .pro7 {
+                width: 100%;
+            }
+
+            .main6 .msg {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .main6 .msg .msg1 {
+                margin: 0 auto;
+                width: 80%;
+
+                height: auto;
+            }
+
+            .main6 .msg .msg2 {
+                margin: 0 auto;
+                width: 500px;
+                margin-bottom: 30px;
+            }
+
+            .msg .msg2 input,
+            .msg .msg2 textarea {
+                width: 420px;
+            }
+
+            .msg .msg2 button {
+                margin: 0 auto;
+
+            }
+        }
+        @media (max-width: 600px){
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="name">
+                <h4>Mohammad <span> Abushad</span></h4>
+            </div>
+            <div class="link">
+                <a href="#"> Home</a>
+                <a href="#"> About</a>
+                <a href="#"> Project</a>
+                <a href="#"> blog</a>
+                <a href="#"> Contect</a>
+            </div>
+            <div class="icon">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-whatsapp"></i>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main1">
+            <div class="back_image">
+
+            </div>
+        </section>
+        <section class="main2">
+            <div class="image">
+                <div class="wi"><img src="my.jpg" alt=""></div>
+                <div class="wr">
+
+                    <h1>
+                        I'm User Interface Designer & Developer.
+                    </h1>
+
+
+                    <p>Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very
+                        passionate about the work that I do.
+
+
+
+                    <div class="but">
+                        <button> See My work </button>
+                        <button> Contect me </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main3">
+            <div class="cont">
+                <div class="fir">
+                    <h1> What I Do <span>?</span></h1>
+                    <p>
+                        Duis mollis est commodo luctus nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue.
+                        Praesent commodo cursus magna, vel scelerisque nisl.
+                    </p>
+                </div>
+                <div class="sec">
+                    <div class="item">
+                        <div class="cut">
+                            <p>Html</p>
+                            <p>80%</p>
+
+                        </div>
+                        <div class="progr"></div>
+                    </div>
+                    <div class="item">
+                        <div class="cut">
+                            <p>Css</p>
+                            <p>90%</p>
+
+                        </div>
+                        <div class="progr"></div>
+                    </div>
+                    <div class="item">
+                        <div class="cut">
+                            <p>Js</p>
+                            <p>85%</p>
+
+                        </div>
+                        <div class="progr"></div>
+                    </div>
+                    <div class="item">
+                        <div class="cut">
+                            <p>Python</p>
+                            <p>75%</p>
+
+                        </div>
+                        <div class="progr"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cont2">
+
+                <div class="lo">
+                    <div class="lo1"> <i class="bi bi-filetype-html"></i>
+                        <p>Html</p>
+                    </div>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
+                        justo cum sociis natoque magnis.</p>
+                </div>
+                <div class="lo">
+                    <div class="lo1"><i class="bi bi-filetype-css"></i>
+                        <p>Css</p>
+                    </div>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
+                        justo cum sociis natoque magnis.</p>
+                </div>
+                <div class="lo">
+                    <div class="lo1"><i class="bi bi-filetype-js"></i>
+                        <p>J.s</p>
+                    </div>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
+                        justo cum sociis natoque magnis.</p>
+                </div>
+                <div class="lo">
+                    <div class="lo1"><i class="bi bi-filetype-py"></i>
+                        <p>Python</p>
+                    </div>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
+                        justo cum sociis natoque magnis.</p>
+                </div>
+            </div>
+        </section>
+        <section class="main4">
+            <div class="pro">
+                <div class="pro1">
+                    <div class="pro2">
+                        <h1>Latest Projects</h1>
+                        <p>Check out some of my latest projects with creative ideas.</p>
+                    </div>
+
+                    <button> See all project</button>
+
+                </div>
+                <div class="pro3">
+                    <div class="pro4">
+                        <p>Web Design</p>
+                        <h2>Snowlake Theme</h2>
+                        <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id
+                            ligula porta felis euismod semper. Fusce dapibus tellus cursus.</p>
+                        <p>See Project
+                        </p>
+                    </div>
+                    <div class="pro5">
+                        <img src="project-2.png" alt="">
+                    </div>
+                </div>
+                <div class="pro3">
+                    <div class="pro5">
+                        <img src="project-2.png" alt="">
+                    </div>
+                    <div class="pro4">
+
+                        <p>Web Design</p>
+                        <h2>Snowlake Theme</h2>
+                        <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id
+                            ligula porta felis euismod semper. Fusce dapibus tellus cursus.</p>
+                        <p>See Project
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="main5">
+            <div class="pro6">
+                <div class="pro7">
+
+                    <div class="pro8">
+
+                        <p>Web Design</p>
+                        <h2>Snowlake Theme</h2>
+                        <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id
+                            ligula porta felis euismod semper. Fusce dapibus tellus cursus.</p>
+                        <p>See Project
+                        </p>
+                    </div>
+                    <div class="pro9">
+                        <img src="project-2.png" alt="">
+                    </div>
+
+
+                </div>
+                <div class="pro7">
+
+                    <div class="pro8">
+
+                        <p>Web Design</p>
+                        <h2>Snowlake Theme</h2>
+                        <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id
+                            ligula porta felis euismod semper. Fusce dapibus tellus cursus.</p>
+                        <p>See Project
+                        </p>
+                    </div>
+                    <div class="pro9">
+                        <img src="project-2.png" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="main6">
+            <div class="msg">
+                <div class="msg1">
+                    <i class="bi bi-chat-heart"></i>
+                    <h1>If you like what you see, let's work together.</h1>
+                    <p>I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to
+                        me from this contact form and I will get back to you shortly.</p>
+                </div>
+                <div class="msg2">
+                    <h1>Contect me</h1>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="tel" placeholder="Enter mob number">
+                    <input type="text" placeholder="Enter Your Subject">
+                    <textarea name="text" id="" placeholder="Enter your Subject"></textarea>
+                    <button> Send massege</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>© 2025 Abushad | All Rights Reserved</p>
+            <div class="icon">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-whatsapp"></i>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
