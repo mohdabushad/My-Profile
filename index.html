@@ -33,17 +33,17 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 1300px;
+
+            width: 100%;
+            height: 80px;
 
             background-color: rgb(43, 42, 42);
-            padding: 15px;
+            padding: 0 35px;
         }
 
         .name h4 {
             color: chocolate;
-            font-size: 18px;
+            font-size: 23px;
         }
 
         .name span {
@@ -58,10 +58,10 @@
         .link a {
             color: aliceblue;
             text-decoration: none;
-            font-size: 15px;
+            font-size: 17px;
         }
 
-        .link a:hover {
+        .link a:hover,.link a:active{
             color: rgb(253, 212, 27);
             text-decoration: underline;
             transform: scale(1.1);
@@ -71,6 +71,11 @@
             display: flex;
             gap: 15px;
         }
+
+        .nav .ico2 {
+            display: none;
+        }
+
 
         .icon i {
             color: antiquewhite;
@@ -103,7 +108,7 @@
 
         .main1 {
             width: 100%;
-            height: 200px;
+            height: 300px;
         }
 
         .back_image {
@@ -113,7 +118,7 @@
             border-radius: 12px;
 
             height: 100%;
-            margin: 0px auto;
+            margin: 30px auto;
 
 
 
@@ -160,6 +165,7 @@
             max-width: 600px;
 
             height: 32vw;
+            max-height: 600px;
             border-radius: 50%;
 
         }
@@ -173,7 +179,7 @@
         }
 
         .wr h1 {
-            font-size: 45px;
+            font-size: 42px;
 
 
 
@@ -185,7 +191,7 @@
         }
 
         .but {
-            padding-top: 2vw;
+            padding-top: 40px;
 
             display: flex;
             gap: 3vw;
@@ -193,8 +199,8 @@
 
         .but button {
             background-color: rgb(245, 180, 193);
-            width: 110px;
-            height: 2.6vw;
+            width: 150px;
+            height: 50px;
             border-radius: 10px;
             font-size: 15px;
         }
@@ -211,7 +217,9 @@
 
         .main3 .cont {
             display: flex;
-
+            background-color: #F7F7F7;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             gap: 50px;
             margin: 0 auto;
             width: 80%;
@@ -249,7 +257,7 @@
         }
 
         .cont2 .lo p {
-            font-size: 1.2vw;
+            font-size: 18px;
             padding-bottom: 10px;
 
 
@@ -265,36 +273,34 @@
         }
 
         .cont .fir {
-            background-color: aliceblue;
+            
             border-radius: 20px;
             padding: 40px;
             width: 50%;
             height: 90%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
 
         }
 
         .cont .fir h1 {
-            font-size: 3vw;
+            font-size: 35px;
             margin-bottom: 15px;
         }
 
         .cont .fir p {
             width: 100%;
             height: 100px;
-            font-size: 1.5vw;
+            font-size: 22px;
             line-height: 1.2;
             word-spacing: 4px;
         }
 
         .cont .sec {
-            background-color: aliceblue;
+            
             border-radius: 20px;
             padding: 40px;
             width: 50%;
             height: 90%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
         }
 
         .progr {
@@ -520,7 +526,7 @@
 
         .main6 .msg2 input {
             margin-top: 20px;
-            width: 22vw;
+            width: 100%;
             height: 40px;
             padding: 10px 0 10px 10px;
             font-size: 14px;
@@ -533,7 +539,7 @@
         .main6 .msg2 textarea {
             padding: 20px 0 0px 10px;
             font-size: 15px;
-            width: 22vw;
+            width: 100%;
             height: 100px;
             margin: 20px 0;
             border-radius: 10px;
@@ -550,8 +556,6 @@
             color: #F7F7F7;
             font-size: 16px;
             background-color: cornflowerblue;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border-radius: 20px;
         }
 
         footer {
@@ -563,13 +567,12 @@
         footer .foot {
             display: flex;
             justify-content: space-between;
-            width: 80%;
-            max-width: 1300px;
+            width: 100%;
             height: 80px;
-            margin: 0 auto;
+
             background-color: cornflowerblue;
             padding: 30px;
-            border-radius: 20px;
+           
 
         }
 
@@ -586,7 +589,7 @@
             }
 
             .wr button {
-                height: 35px;
+                height: 45px;
             }
 
             .wr {
@@ -715,7 +718,7 @@
 
         }
 
-        @media (min-width: 700px) and (max-width: 1000px) {
+        @media (min-width: 701px) and (max-width: 1000px) {
             .main2 .image {
                 display: flex;
                 flex-direction: column;
@@ -732,7 +735,7 @@
             }
 
             .main2 .image .wr .but button {
-                height: 40px;
+                height: 45px;
             }
 
             .main2 .image .wr {
@@ -916,8 +919,329 @@
 
             }
         }
-        @media (max-width: 600px){
-            
+
+        @media (max-width: 700px) {
+
+            .main1 .back_image,
+            .main1 {
+                height: 140px;
+
+            }
+
+            .nav .name h4 {
+                font-size: 14px;
+            }
+
+            .nav .link,
+            .nav .icon {
+                display: none;
+            }
+
+            .main2 .image {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding-top: 30px;
+
+            }
+
+            .main2 {
+                margin-top: 0;
+            }
+
+            .main2 .image .wi {
+
+
+                width: 100%;
+
+
+            }
+
+            .main2 .image .wr .but button {
+                height: 45px;
+                width: 160px;
+                font-size: 13px;
+            }
+
+            .main2 .image .wr {
+                padding-top: 30px;
+                height: auto;
+                margin: 0 auto;
+                width: 100%;
+
+            }
+
+            .main2 .image .wr h1 {
+                font-size: 5.6vw;
+                width: 90%;
+                margin: 0 auto;
+
+            }
+
+            .main2 .image .wr p {
+                font-size: 4vw;
+                margin-bottom: 20px;
+                width: 90%;
+                margin: 0 auto;
+
+            }
+
+            .main2 .image .wi img {
+
+                width: 100%;
+                height: 60vw;
+
+            }
+
+            .main3 {
+                padding: 40px 0;
+
+            }
+
+            .main3 .cont {
+
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+                height: auto;
+
+
+            }
+
+            .main3 .cont .fir {
+                width: 100%;
+                padding: 20px;
+                height: 250px;
+            }
+
+            .main3 .cont .fir h1 {
+                font-size: 7vw;
+
+            }
+
+            .main3 .cont .fir p {
+                font-size: 15px;
+
+            }
+
+            .main3 .cont .sec {
+                width: 100%;
+                height: 270px;
+                padding: 20px;
+            }
+
+            .cont2 {
+
+                margin: 0px;
+                flex-wrap: wrap;
+
+            }
+
+            .cont2 .lo {
+
+                width: 80vw;
+                height: 250px;
+
+            }
+
+            .cont2 .lo p {
+                font-size: 17px;
+            }
+
+            .cont2 .lo .lo1 {
+                width: 85px;
+            }
+
+            .main6 .msg {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                gap: 30px;
+            }
+
+            .main6 .msg .msg1 {
+                margin: 0 auto;
+                width: 80%;
+                padding: 0;
+                height: auto;
+            }
+
+            .main6 .msg .msg1 h1 {
+                font-size: 4.8vw;
+            }
+
+            .main6 .msg .msg1 p {
+                font-size: 100%;
+            }
+
+            .main6 .msg .msg2 {
+                box-shadow: none;
+                height: auto;
+                padding: 0;
+                margin: 0 auto;
+                width: 90%;
+                margin-bottom: 30px;
+            }
+
+            .msg .msg2 h1 {
+                font-size: 28px;
+            }
+
+            .msg .msg2 input {
+
+                width: 100%;
+                height: 40px;
+            }
+
+            .msg .msg2 textarea {
+                width: 100%;
+            }
+
+            .msg .msg2 button {
+                margin: 0 auto;
+                width: 160px;
+                height: 34px;
+                box-shadow: none;
+
+            }
+
+            .pro3 .pro4 h2,
+            .pro8 h2 {
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+
+            .pro1 {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+
+            .pro1 .pro2 h1 {
+                font-size: 25px;
+            }
+
+            .pro .pro3 {
+                padding: 20px;
+            }
+
+
+            .pro1 .pro2 p {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            .pro .pro1 button {
+                width: 120px;
+                font-size: 15px;
+                height: 40px;
+            }
+
+            .main4 .pro3 {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding: 5px;
+
+
+            }
+
+            .main4 .pro3 .pro4 {
+                width: 100%;
+                padding: 20px;
+                height: 260px;
+            }
+
+            .main4 .pro3 .pro4 p {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+
+            .main4 .pro3 .pro4 h2 {
+                margin-top: 10px;
+                font-size: 5vw;
+            }
+
+            .main4 .pro3 .pro5,
+            .main4 .pro3 .pro5 img {
+                width: 100%;
+                height: 250px;
+            }
+
+            .main5 .pro6 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .main5 .pro7 {
+                width: 100%;
+            }
+
+            .main5 .pro8 {
+                padding: 24px;
+                height: 260px;
+                margin-bottom: 10px;
+            }
+
+            .main5 .pro8 p {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+
+            .main5 .pro8 h2 {
+                margin-top: 10px;
+                font-size: 5vw;
+            }
+
+            .main5 .pro9 img {
+                width: 100%;
+                height: 280px;
+            }
+
+            footer .foot {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 15px;
+                border-radius: none;
+            }
+
+            footer .foot .icon {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                margin: auto;
+            }
+
+            footer .foot p {
+                width: 240px;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+
+            .nav .ico2 {
+                display: flex;
+
+                color: #F7F7F7;
+                gap: 15px;
+
+
+            }
+
+            nav .ico2 i {
+                padding: 0 70px;
+            }
+
+            @media (max-width: 400px) {
+                footer .foot p {
+                    width: 70vw;
+                    margin: 0 auto;
+                    font-size: 4vw;
+                }
+
+            }
+
+
+
         }
     </style>
 </head>
@@ -941,7 +1265,9 @@
                 <i class="bi bi-linkedin"></i>
                 <i class="bi bi-github"></i>
                 <i class="bi bi-whatsapp"></i>
-
+            </div>
+            <div class="ico2"><i class="bi bi-list"></i>
+                <i class="bi bi-house-fill"></i>
             </div>
         </div>
     </header>
