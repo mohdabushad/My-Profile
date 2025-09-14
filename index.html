@@ -29,6 +29,8 @@
 
         }
 
+
+
         .nav {
             display: flex;
             align-items: center;
@@ -56,12 +58,14 @@
         }
 
         .link a {
+            display: block;
             color: aliceblue;
             text-decoration: none;
             font-size: 17px;
         }
 
-        .link a:hover,.link a:active{
+        .link a:hover,
+        .link a:active {
             color: rgb(253, 212, 27);
             text-decoration: underline;
             transform: scale(1.1);
@@ -78,19 +82,26 @@
 
 
         .icon i {
+            display: block;
             color: antiquewhite;
+
+
+
         }
 
         .icon i:nth-child(1):hover {
             color: blue;
+
         }
 
         .icon i:nth-child(2):hover {
             color: rgb(234, 9, 255);
+
         }
 
         .icon i:nth-child(3):hover {
             color: rgb(0, 0, 255);
+
         }
 
         .icon i:nth-child(5):hover {
@@ -99,29 +110,56 @@
 
         .icon i:nth-child(4):hover {
             color: rgb(0, 0, 0);
+
         }
 
         main {
             width: 100%;
             height: auto;
+
+            height: 100%;
         }
 
         .main1 {
             width: 100%;
-            height: 300px;
+            height: 500px;
+
         }
 
         .back_image {
-            width: 80%;
-            max-width: 1300px;
+            width: 100%;
+
             background: url("https://wallpapers.com/images/hd/coding-with-python-3d-b9oshkp9vqlwaap6.webp") no-repeat center /cover;
-            border-radius: 12px;
-
             height: 100%;
-            margin: 30px auto;
 
+            animation: changeimage 5s infinite;
 
+        }
 
+        @keyframes changeimage {
+            0% {
+                background: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*6qrtmT03RNBPnbu1zD6i3g.png");
+            }
+
+            20% {
+                background: url("https://ik.imagekit.io/ably/ghost/prod/2023/12/choosing-the-best-javascript-frameworks-for-your-next-project.png?tr=w-1728,q-50");
+            }
+
+            40% {
+                background: url("https://verpex.com/assets/uploads/images/blog/Basic-HTML-Codes-for-Websites.webp?v=1691760654");
+            }
+
+            60% {
+                background: url("https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/04/full-stack%20web%20development_1681290664.png");
+            }
+
+            80% {
+                background: url("http://cdn.mos.cms.futurecdn.net/DVffQnnibMWmNpx2Wfb5Se-650-80.jpg.webp");
+            }
+
+            100% {
+                background: url("https://images.prismic.io//intuzwebsite/2caf3e7f-1704-42e2-908f-3d089da3e3ac_The+Ultimate+Guide+to+Android+App+Development.png?w=1200&q=80&auto=format,compress&fm=png8");
+            }
         }
 
         .back_image h2 {
@@ -135,6 +173,8 @@
         .main2 {
             margin-top: 50px;
             width: 100%;
+
+            height: 100%;
 
 
         }
@@ -201,8 +241,13 @@
             background-color: rgb(245, 180, 193);
             width: 150px;
             height: 50px;
-            border-radius: 10px;
+            border-radius: 50px;
             font-size: 15px;
+        }
+
+        .but button:hover {
+            background-color: coral;
+            transform: scaleX(-1);
         }
 
         .main3 {
@@ -228,6 +273,14 @@
 
         }
 
+        .main3 .cont:hover,
+        .main3 .cont2 .lo:hover,
+        .pro .pro3:hover,
+        .pro6 .pro7:hover,
+        .main6 .msg:hover {
+            scale: 1.04;
+        }
+
         .main3 .cont2 {
 
             display: flex;
@@ -241,7 +294,7 @@
         }
 
         .cont2 .lo {
-            background-color: aliceblue;
+            background-color: rgba(170, 201, 228, 0.336);
             border-radius: 20px;
             padding: 20px;
             width: 20vw;
@@ -273,12 +326,12 @@
         }
 
         .cont .fir {
-            
+
             border-radius: 20px;
             padding: 40px;
             width: 50%;
             height: 90%;
-            
+
 
         }
 
@@ -296,7 +349,7 @@
         }
 
         .cont .sec {
-            
+
             border-radius: 20px;
             padding: 40px;
             width: 50%;
@@ -570,22 +623,40 @@
             width: 100%;
             height: 80px;
 
-            background-color: cornflowerblue;
+            background-color: rgb(0, 0, 0);
             padding: 30px;
-           
 
+
+        }
+
+        footer .foot p,
+        footer .foot i {
+            color: #F7F7F7;
+        }
+
+        footer .foot i {
+            font-size: 17px;
         }
 
 
 
 
+
         @media (min-width: 1001px) and (max-width: 1300px) {
+            .main1 {
+                height: auto;
+            }
+
+            .back_image {
+                height: 230px;
+            }
+
             .wr h1 {
                 font-size: 3vw;
             }
 
             .wr p {
-                font-size: 2vw;
+                font-size: 1.8vw;
             }
 
             .wr button {
@@ -594,6 +665,10 @@
 
             .wr {
                 margin-top: 40px;
+            }
+
+            .image {
+                width: 90%;
             }
 
             .wi img {
@@ -719,11 +794,65 @@
         }
 
         @media (min-width: 701px) and (max-width: 1000px) {
+            .nav .ico2 {
+                display: block;
+                color: #F7F7F7;
+            }
+
+            .pannel {
+                display: none;
+                position: absolute;
+                top: 80px;
+                right: 0;
+                height: 200px;
+                background-color: brown;
+                width: 100%;
+            }
+
+            .nav .icon {
+                display: flex;
+                width: 40px;
+                flex-direction: column;
+                position: absolute;
+                top: 90px;
+                gap: 10px;
+                z-index: 100;
+                right: 0;
+                font-size: 20px;
+
+            }
+
+
+            .nav .link {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 90px;
+                z-index: 100;
+                width: 100px;
+
+            }
+
+            .nav .link a,
+            .nav .icon i {
+                display: none;
+            }
+
+
+            .back_image {
+                height: 200px;
+            }
+
             .main2 .image {
                 display: flex;
                 flex-direction: column;
                 height: auto;
 
+            }
+
+            .main1 {
+                height: auto;
             }
 
             .main2 .image .wi {
@@ -736,6 +865,7 @@
 
             .main2 .image .wr .but button {
                 height: 45px;
+
             }
 
             .main2 .image .wr {
@@ -761,9 +891,6 @@
 
             }
 
-            .nav .link {
-                display: none;
-            }
 
             .cont2 {
                 margin: 0px;
@@ -924,18 +1051,60 @@
 
             .main1 .back_image,
             .main1 {
-                height: 140px;
+                height: 150px;
+                width: 100%;
 
+            }
+
+            .nav {
+                padding: 0px 20px;
+                position: relative;
             }
 
             .nav .name h4 {
-                font-size: 14px;
+                font-size: 18px;
             }
 
-            .nav .link,
+            .pannel {
+                display: none;
+                position: absolute;
+                top: 80px;
+                right: 0;
+                height: 200px;
+                background-color: brown;
+                width: 100%;
+            }
+
             .nav .icon {
+                display: flex;
+                width: 40px;
+                flex-direction: column;
+                position: absolute;
+                top: 90px;
+                gap: 10px;
+                z-index: 100;
+                right: 0;
+                font-size: 20px;
+
+            }
+
+
+            .nav .link {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 90px;
+                z-index: 100;
+                width: 100px;
+
+            }
+
+            .nav .link a,
+            .nav .icon i {
                 display: none;
             }
+
 
             .main2 .image {
                 display: flex;
@@ -958,9 +1127,16 @@
             }
 
             .main2 .image .wr .but button {
-                height: 45px;
-                width: 160px;
+                height: 40px;
+                width: 140px;
                 font-size: 13px;
+
+            }
+
+            .main2 .image .wr .but {
+                width: 100%;
+                gap: 20px;
+                margin-left: 3.5vw;
             }
 
             .main2 .image .wr {
@@ -972,14 +1148,14 @@
             }
 
             .main2 .image .wr h1 {
-                font-size: 5.6vw;
+                font-size: 30px;
                 width: 90%;
                 margin: 0 auto;
 
             }
 
             .main2 .image .wr p {
-                font-size: 4vw;
+                font-size: 23px;
                 margin-bottom: 20px;
                 width: 90%;
                 margin: 0 auto;
@@ -1001,7 +1177,7 @@
             .main3 .cont {
 
                 display: flex;
-                gap: 30px;
+                gap: 0;
                 flex-direction: column;
                 height: auto;
 
@@ -1011,16 +1187,16 @@
             .main3 .cont .fir {
                 width: 100%;
                 padding: 20px;
-                height: 250px;
+                height: 230px;
             }
 
             .main3 .cont .fir h1 {
-                font-size: 7vw;
+                font-size: 5vw;
 
             }
 
             .main3 .cont .fir p {
-                font-size: 15px;
+                font-size: 19px;
 
             }
 
@@ -1053,6 +1229,7 @@
             }
 
             .main6 .msg {
+                width: 95%;
                 display: flex;
                 flex-direction: column;
                 height: auto;
@@ -1084,17 +1261,20 @@
             }
 
             .msg .msg2 h1 {
+                margin: 10px auto;
+                width: 400px;
                 font-size: 28px;
             }
 
             .msg .msg2 input {
-
-                width: 100%;
+                margin: 10px auto;
+                width: 400px;
                 height: 40px;
             }
 
             .msg .msg2 textarea {
-                width: 100%;
+                margin: 10px auto;
+                width: 400px;
             }
 
             .msg .msg2 button {
@@ -1111,10 +1291,16 @@
                 font-size: 15px;
             }
 
-            .pro1 {
+            .main4 .pro,
+            .main5 .pro6 {
+                width: 95%;
+            }
+
+            .main4 .pro .pro1 {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
+                padding: 20px;
             }
 
             .pro1 .pro2 h1 {
@@ -1238,9 +1424,116 @@
                     font-size: 4vw;
                 }
 
+                .nav .name h4 {
+                    font-size: 15px;
+                }
+
+                .pannel {
+
+                    position: absolute;
+                    top: 80px;
+                    right: 0;
+                    height: 200px;
+                    background-color: brown;
+                    width: 100%;
+                }
+
+                .nav .icon {
+                    display: flex;
+                    width: 40px;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 90px;
+                    gap: 10px;
+                    z-index: 100;
+                    right: 0;
+                    font-size: 20px;
+
+                }
+
+
+                .nav .link {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    position: absolute;
+                    top: 90px;
+                    z-index: 100;
+                    width: 100px;
+
+                }
+
             }
 
 
+
+
+
+        }
+
+        @media (max-width: 500px) {
+            .main2 .image {
+                width: 100%;
+            }
+
+
+            .main2 .image .wr h1 {
+                font-size: 7vw;
+
+                margin: 0 auto;
+
+            }
+
+            .main2 .image .wr p {
+                font-size: 4.5vw;
+                margin-bottom: 20px;
+
+                margin: 0 auto;
+
+            }
+
+            .main2 .image .wi img {
+
+                width: 100%;
+                height: 80vw;
+
+            }
+
+            .but {
+                padding-top: 40px;
+                margin-left: 4vw;
+                display: flex;
+                width: 100%;
+                gap: 5vw;
+            }
+
+            .main2 .image .wr .but button {
+                height: 35px;
+                width: 120px;
+                font-size: 13px;
+                margin: 0;
+
+            }
+
+            .msg .msg2 h1 {
+                width: 100%;
+
+                font-size: 28px;
+            }
+
+            .msg .msg2 input {
+
+                width: 100%;
+                height: 40px;
+            }
+
+            .msg .msg2 textarea {
+
+                width: 100%;
+            }
+             .main3 .cont .fir p{
+              font-size: 17px;
+            }
 
         }
     </style>
@@ -1249,9 +1542,13 @@
 <body>
     <header>
         <div class="nav">
+            <div class="ico2">
+                <i class="bi bi-house-fill"></i>
+            </div>
             <div class="name">
                 <h4>Mohammad <span> Abushad</span></h4>
             </div>
+
             <div class="link">
                 <a href="#"> Home</a>
                 <a href="#"> About</a>
@@ -1266,12 +1563,14 @@
                 <i class="bi bi-github"></i>
                 <i class="bi bi-whatsapp"></i>
             </div>
-            <div class="ico2"><i class="bi bi-list"></i>
-                <i class="bi bi-house-fill"></i>
+            <div class="ico2"><button onclick="togglePannel()"><i class="bi bi-list"></i></button>
+
             </div>
         </div>
     </header>
+    <div class="pannel"></div>
     <main>
+
         <section class="main1">
             <div class="back_image">
 
@@ -1287,8 +1586,9 @@
                     </h1>
 
 
-                    <p>Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very
-                        passionate about the work that I do.
+                    <p>I’m a passionate frontend developer skilled in HTML, CSS, JavaScript, and React. I love creating
+                        responsive, user-friendly websites and continuously learning new technologies to build better,
+                        faster digital experiences.</p>
 
 
 
@@ -1304,9 +1604,9 @@
                 <div class="fir">
                     <h1> What I Do <span>?</span></h1>
                     <p>
-                        Duis mollis est commodo luctus nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                        Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue.
-                        Praesent commodo cursus magna, vel scelerisque nisl.
+                        “I build complete web applications from scratch, including frontend, backend, database, and
+                        deployment. I specialize in creating responsive websites, user-friendly dashboards, and
+                        e-commerce platforms.”
                     </p>
                 </div>
                 <div class="sec">
@@ -1349,31 +1649,27 @@
 
                 <div class="lo">
                     <div class="lo1"> <i class="bi bi-filetype-html"></i>
-                        <p>Html</p>
+                        <p>Frontend Development</p>
                     </div>
-                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                        justo cum sociis natoque magnis.</p>
+                    <p>I build responsive and modern web interfaces using HTML, CSS, JavaScript, React.js, and Next.js.</p>
                 </div>
                 <div class="lo">
                     <div class="lo1"><i class="bi bi-filetype-css"></i>
-                        <p>Css</p>
+                        <p>Backend Development</p>
                     </div>
-                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                        justo cum sociis natoque magnis.</p>
+                    <p>I create secure and scalable server-side applications with Node.js, Express.js, and REST APIs.</p>
                 </div>
                 <div class="lo">
                     <div class="lo1"><i class="bi bi-filetype-js"></i>
-                        <p>J.s</p>
+                        <p>Database Management</p>
                     </div>
-                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                        justo cum sociis natoque magnis.</p>
+                    <p>I design and manage databases like MongoDB and MySQL for storing and retrieving data efficiently.</p>
                 </div>
                 <div class="lo">
                     <div class="lo1"><i class="bi bi-filetype-py"></i>
-                        <p>Python</p>
+                        <p>UI/UX Designing</p>
                     </div>
-                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                        justo cum sociis natoque magnis.</p>
+                    <p>I craft user-friendly designs, wireframes, and prototypes using Figma, ensuring a smooth user experience.</p>
                 </div>
             </div>
         </section>
@@ -1475,6 +1771,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="foot">
             <p>© 2025 Abushad | All Rights Reserved</p>
@@ -1489,6 +1786,26 @@
 
         </div>
     </footer>
+    <script>
+        function togglePannel() {
+            // screen size check karo
+            if (window.innerWidth <= 1000) {
+                // sab classes ek sath select karo
+                let elements = document.querySelectorAll(".pannel, .nav .icon i, .nav .link a");
+
+                elements.forEach(el => {
+                    if (el.style.display === "none" || el.style.display === "") {
+                        el.style.display = "block";
+                    } else {
+                        el.style.display = "none";
+                    }
+                });
+            }
+        }
+
+
+
+    </script>
 </body>
 
 </html>
